@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+</head>
+
+<body>
+
+    <div class="header">
+
+    </div>
+
+    <!-- <div class="warning">
+        <div class="warning__status">
+            <span class="warning__title">Status</span>
+            <button class="warning__close">X</button>
+        </div>
+        <div class="warning__message"></div>
+        <div class="warning__bar"></div>
+    </div> -->
+
+    <section class="mainAside">
+
+        <main>
+            <div class="container container--main">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item menu__item--all menu__item--selected">
+                            <h2 class="menu__title">Todos</h2>
+                        </li>
+                        <li class="menu__item menu__item--bakery">
+                            <span class="menu__icon"><img src="../assets/images/bread.png" alt=""></span>
+                            <h2 class="menu__title">Panificadora</h2>
+                        </li>
+                        <li class="menu__item menu__item--fruits">
+                            <span class="menu__icon"><img src="../assets/images/fruits.png" alt=""></span>
+                            <h2 class="menu__title">Frutas</h2>
+                        </li>
+                        <li class="menu__item menu__item--drinks">
+                            <span class="menu__icon"><img src="../assets/images/drink.png" alt=""></span>
+                            <h2 class="menu__title">Bebidas</h2>
+                        </li>
+                    </ul>
+                </nav>
+                <section class="showcase">
+                    <section class="head">
+                        <div class="head__product">
+                            <h2 class="head__title">Produto</h2>
+                        </div>
+                        <div class="head__categories">
+                            <h2 class="head__title">Categorias</h2>
+                        </div>
+                        <div class="head__description">
+                            <h2 class="head__title">Descrição</h2>
+                        </div>
+                        <div class="head__actions">
+                            <h2 class="head__title">Ações</h2>
+                        </div>
+                    </section>
+
+                    <section class="body">
+
+                    </section>
+                </section>
+            </div>
+        </main>
+
+        <aside id="modal__cadastrar--edit" class="modal__container">
+            <section class="modal">
+                <section class="modal__head">
+                    <h2 id="modal__title--main" class="modal__title">Cadastro de produto</h2>
+                    <button id="modal__close" class="modal__close">X</button>
+                </section>
+                <section class="modal__body">
+                    <form class="modal__form" action="">
+                        <label class="modal__label">
+                            <div class="modal__category">Nome do Produto</div>
+                            <input id="modal__title" class="modal__field modal__field--input" type="text" placeholder="Pizza Vegetariana de Brócolis" name="nome">
+                        </label>
+
+                        <label class="modal__label">
+                            <div class="modal__category">Descrição</div>
+                            <textarea id="modal__description" class="modal__field modal__field--textarea" name="descricao" placeholder="Esse é um dos sabores de pizza mais pedidos por quem não come carne"></textarea>
+                        </label>
+
+                        <label class="modal__label">
+                            <div class="modal__category">Categorias</div>
+                            
+                            <span class="modal__field modal__field--radio modal__field--gray" id="panificadora">Panificadora</span>
+                            <span class="modal__field modal__field--radio modal__field--gray" id="frutas">Frutas</span>
+                            <span class="modal__field modal__field--radio modal__field--gray" id="bebidas">Bebidas</span>
+                        </label>
+
+                        <label class="modal__label">
+                            <div class="modal__category">Valor do Produto</div>
+                            <input  id ="modal__price" class="modal__field modal__field--input" type="number" name="preco" placeholder="50.00" ></input>
+                        </label>
+
+                        <label class="modal__label">
+                            <div class="modal__category">Link da imagem</div>
+                            <input id="modal__image" class="modal__field modal__field--input" type="url" name="imagem" placeholder="https://images.unsplash.com/" ></input>
+                        </label>
+
+                    </form>
+                </section>
+                <section class="modal__foot">
+                    <button id="modal__forfeit" class="modal__btn modal__btn--gray">Excluir</button>
+                    <button id="modal__save" class="modal__btn modal__btn--salmon">Salvar alterações</button>
+                </section>
+            </section>
+        </aside>
+
+        <aside id="modal__cadastrar--remove" class="modal__container--remove ">
+           <div class="modal__remove">
+               <section class="modal__head">
+                    <h2 class="modal__title ">Exclusão de produto</h2>
+                </section>
+               <section class="body__modal--remove">
+                   <h3 class="modal__title--remove">Tem certeza que deseja excluir este produto?</h3>
+                   <div class="buttons__modal--remove">
+                       <button id="modal__btn--yes" class="modal__btn--remove modal__btn--gray">Sim</button>
+                       <button id="modal__btn--no" class="modal__btn--remove modal__btn--gray">Não</button>
+                   </div>
+               </section>
+           </div>
+
+        </aside>
+    </section>
+
+    <div class="container container--open">
+        <button id="open" class="open">Adicionar novo produto</button>
+
+    </div>
+
+
+
+    <script type="module" src="../Js/controllers/dashboardController.js"></script>
+</body>
+
+</html>

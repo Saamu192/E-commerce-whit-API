@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autenticação User</title>
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/auth.css">
+</head>
+
+<body>
+    <header class="headerAuth">
+        <h1 class="logo"><img src="../../src/assets/images/Golden.png" width="30px", heigth="30px">Apollo Tech</h1>
+        <h2 class="logo logo_food">Food</h2>
+        <a href="../../index.html" class="goHome" id="goHome">Home</a>
+    </header>
+
+    <main class="mainContent">
+        <div class="mainContent_Login">
+            <h2 class="Login titulo_forms">Login</h2>
+            <form action="" class="form_Login" id="form_Login">
+                <h3 class="nomeInput">Email: </h3>
+                <input type="text" class="form_email" name="email" id="form_email" placeholder="  Digite seu email" data-rules="required|email">
+                <h3 class="nomeInput">Senha:</h3>
+                <input type="password" class="form_senha" name="password" placeholder="  Digite sua senha" data-rules="required|min=5">
+                <input type="submit" value="Login" class="form_botaoLogin">
+            </form>
+        </div>
+        <div class="option_auth">
+            <h3 class="ou">OU</h3>
+            <button class="optionRegister" id="optionRegister">Cadastre-se</button>
+        </div>
+
+        <div id="modal_cadastro" class="modal_container">
+            <div class="modal">
+                <button class="fechar_modal" id="fechar_modal"> X</button>
+                <h3 class="titulo_forms">Cadastre-se</h3>
+                <form action="" class="form_Cadastro" id="form_Cadastro">
+                    <h3 class="nomeInput">Nome:</h3>
+                    <input type="text" class="form_nome" id="nome_Cadastro" name="name" placeholder="  Digite seu username" data-rules="required|min=3">
+                    <h3 class="nomeInput">Email:</h3>
+                    <input type="text" class="form_email" id="email_Cadastro" name="email" placeholder="  Digite seu email" data-rules="required|email">
+                    <h3 class="nomeInput">Senha:</h3>
+                    <input type="password" class="form_senha" id="senha_Cadastro" name="password" placeholder="  Digite sua senha" data-rules="required|min=5">
+                    <input type="submit" value="Cadastrar" class="form_botaoCadastro" data-rules="required">
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <script type="module" src="../Js/controllers/authController.js"></script>
+</body>
+
+</html>

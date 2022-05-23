@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300&family=Inter:wght@100;700&family=Montserrat:ital,wght@0,300;0,400;0,700;1,200&family=Padauk:wght@700&family=Roboto:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Nunito:wght@400;700&family=Poppins:wght@400;500;700&display=swap');
+html,
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+:root {
+    --titulos-page: #212529;
+    --font-titles-page: 'Inter', sans-serif;
+    --text-page: #868E96;
+    --background-page: #ffffff;
+    --background-inputs: #eff0f0;
+    --botoes-especiais: #FF2253;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ffffff;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c7c7c7;
+}
+
+@keyframes entrar {
+    0% {
+        transform: translate(500px);
+    }
+    25% {
+        transform: translate(0px);
+    }
+    75% {
+        transform: translate(100px);
+    }
+    100% {
+        transform: translate(0px);
+    }
+}
+
+.warning {
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+    height: 152px;
+    position: absolute;
+    top: 73px;
+    right: 12px;
+    background: #fff;
+    border-radius: 11px;
+    animation-name: entrar;
+    animation-duration: 1s;
+    z-index: 99;
+    border: 3px solid #F8F9FA;
+}
+
+.warning__status {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 28px;
+    width: 100%;
+    background: #F8F9FA;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.warning__title {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.warning__close {
+    width: 31px;
+    height: 30px;
+    background: #E9ECEF;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 14px;
+    color: #868E96;
+}
+
+.warning__message {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 0px 28px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #212529;
+}
+
+.warning__bar {
+    width: 100%;
+    height: 8px;
+    background: #39DF8F;
+    border-radius: 0px 0px 8px 8px;
+    transition: width 6s linear;
+}
+
+.headerAuth {
+    width: 100%;
+    height: 60px;
+    background-color: var(--background-page);
+    box-shadow: 0px 0px 40px 2px rgb(0 0 0 / 25%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--font-titles-page);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 85%;
+    line-height: 29px;
+    margin-left: 5%;
+}
+
+.logo_food {
+    color: var(--botoes-especiais);
+    margin-left: 1%;
+    font-size: 70%;
+    line-height: 20px;
+}
+
+.goHome {
+    float: right;
+    margin-left: 50%;
+    padding: 0%;
+    font-family: var(--font-titles-page);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 85%;
+    line-height: 29px;
+    background-color: var(--botoes-especiais);
+    border-radius: 10px;
+    color: var(--background-page);
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.mainContent_Login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25%;
+    padding: 7%;
+    border: 1px solid var(--background-inputs);
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px 2px rgb(0 0 0 / 25%);
+    width: 87%;
+    height: 100%;
+}
+
+.titulo_forms {
+    font-family: var(--font-titles-page);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 14px;
+    margin-bottom: 15%;
+}
+
+.form_Login {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.form_email,
+.form_senha,
+.form_nome {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+}
+
+.form_email:focus,
+.form_senha:focus,
+.form_nome:focus {
+    background-color: var(--background-page);
+    height: 45px;
+    border: none;
+    outline: 0;
+    box-shadow: 0px 0px 10px 0px rgba(52, 52, 52, 0.25);
+}
+
+.form_botaoLogin,
+.form_botaoCadastro {
+    width: 60%;
+    border-radius: 5%;
+    font-family: var(--font-titles-page);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 85%;
+    line-height: 25px;
+    border-radius: 10px;
+    margin-top: 15%;
+    color: var(--background-page);
+    background-color: var(--botoes-especiais);
+    cursor: pointer;
+    padding: 0%;
+}
+
+input {
+    background-color: var(--background-inputs);
+    color: var(--text-page);
+    border-radius: 5%;
+    border: 1.5px solid #DEE2E6;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    width: 80%;
+    height: 70%;
+    padding: 10px;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+    border: none;
+    background-color: var(--background-page);
+}
+
+.option_auth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    width: 100%;
+}
+
+.ou {
+    font-family: var(--font-titles-page);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 95%;
+    line-height: 35px;
+}
+
+.optionRegister {
+    background-color: var(--botoes-especiais);
+    color: var(--background-page);
+    padding: 0%;
+    font-family: var(--font-titles-page);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 85%;
+    line-height: 29px;
+    border-radius: 10px;
+    width: 45%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+
+.optionRegister:hover,
+.form_botaoLogin:hover,
+.goHome:hover,
+.form_botaoCadastro:hover {
+    background-color: #d20834;
+}
+
+.modal_container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .5);
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_container.show {
+    display: flex;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30%;
+    margin-bottom: 20%;
+    padding: 10%;
+    position: relative;
+    border: 1px solid var(--background-inputs);
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px 2px rgb(0 0 0 / 25%);
+    width: 60%;
+    min-width: 300px;
+    height: 75%;
+    background-color: var(--background-page);
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -50px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.show .modal {
+    animation: modal .9s;
+}
+
+.form_Cadastro {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    height: 100%
+}
+
+.form_botaoCadastro {
+    width: 60%;
+    height: 10%;
+    font-family: var(--font-titles-page);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 95%;
+    line-height: 35px;
+    border-radius: 10px;
+    color: var(--background-page);
+    background-color: var(--botoes-especiais);
+    margin-top: 25%;
+}
+
+.fechar_modal {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    height: 35px;
+    width: 35px;
+    padding: 0%;
+    border-radius: 50%;
+    background-color: var(--botoes-especiais);
+    color: var(--background-page);
+    font-family: var(--font-titles-page);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2em;
+    line-height: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .3);
+}
+
+.nomeInput {
+    font-family: var(--font-titles-page);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 85%;
+    line-height: 35px;
+    color: #454545;
+    margin-right: 85%;
+    margin-bottom: 0%;
+}
+
+.error {
+    border: 2px solid var(--botoes-especiais);
+}
+
+@media screen and (min-width: 600px) {
+    .headerAuth {
+        box-shadow: 0px 0px 10px 2px rgba(52, 52, 52, 0.25);
+    }
+    .logo {
+        font-size: 100%;
+        line-height: 40px;
+        margin-left: 4.5%;
+    }
+    .logo_food {
+        font-size: 70%;
+        line-height: 20px;
+        margin-left: 0.2%;
+        margin-top: 0.1%;
+    }
+    .goHome {
+        margin-left: 75%;
+    }
+    .mainContent {
+        width: 100%;
+        height: 60%;
+        margin: 0 auto;
+        max-width: 700px;
+    }
+    .mainContent_Login {
+        margin-top: 5%;
+        height: 80%;
+    }
+    .modal {
+        width: 40%;
+        min-width: 300px;
+        height: 75%;
+        margin-top: 20%;
+        padding: 4%;
+        justify-content: space-evenly;
+    }
+    .option_auth {
+        margin-top: 3%;
+        width: 100%;
+    }
+    .optionRegister {
+        margin-top: 2%;
+        font-size: 18px;
+        line-height: 35px;
+        width: 30%;
+    }
+    .form_Cadastro {
+        width: 80%;
+        height: 100%
+    }
+    .form_email,
+    .form_senha,
+    .form_nome {
+        width: 100%;
+        height: 60px;
+    }
+    .form_email:focus,
+    .form_senha:focus,
+    .form_nome:focus {
+        height: 70px;
+    }
+    .form_botaoLogin {
+        width: 65%;
+        height: 50px;
+        font-size: 20px;
+    }
+    .form_botaoCadastro {
+        width: 60%;
+        height: 50px;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 680px) {
+    .warning {
+        width: 496px;
+        height: 174px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .warning {
+        top: unset;
+        bottom: 50px;
+        right: 28px;
+    }
+}

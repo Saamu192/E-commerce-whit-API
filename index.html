@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="src/assets/css/reset.css">
+    <link rel="stylesheet" href="src/assets/css/index.css">
+</head>
+
+<body>
+
+    <div class="header">
+
+    </div>
+
+    <section class="mainAside">
+
+        <main>
+            <div class="container">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item menu__item--all menu__item--selected">
+                            <h2 class="menu__title">Todos</h2>
+                        </li>
+                        <li class="menu__item menu__item--bakery">
+                            <span class="menu__icon"><img src="src/assets/images/bread.png" alt=""></span>
+                            <h2 class="menu__title">Panificadora</h2>
+                        </li>
+                        <li class="menu__item menu__item--fruits">
+                            <span class="menu__icon"><img src="src/assets/images/fruits.png" alt=""></span>
+                            <h2 class="menu__title">Frutas</h2>
+                        </li>
+                        <li class="menu__item menu__item--drinks">
+                            <span class="menu__icon"><img src="src/assets/images/drink.png" alt=""></span>
+                            <h2 class="menu__title">Bebidas</h2>
+                        </li>
+                    </ul>
+                </nav>
+                <section class="showcase">
+
+                </section>
+
+            </div>
+
+        </main>
+
+        <aside>
+            <section class="cart">
+                <section class="cart__head">
+                    <div class="cart__left">
+                        <img class="cart__logo" src="src/assets/images/cartLogo.png" alt="">
+                        <h3 class="cart__title">Carrinho</h3>
+                    </div>
+                    <span class="cart__close">X</span>
+                </section>
+                <section class="cart__body">
+
+                </section>
+                <section class="cart__footer">
+                    <section class="quantity">
+                        <span class="quantity__title">Quantidade</span>
+                        <span class="quantity__value">0</span>
+                    </section>
+                    <section class="total">
+                        <span class="total__title">Total</span>
+                        <span class="total__value">R$ 0,00</span>
+                    </section>
+                </section>
+            </section>
+        </aside>
+    </section>
+
+    <button class="open">
+        <img class="open__logo" src="src/assets/images/cartLogo.png" alt="cart image">
+        <h3 class="open__title">Carrinho</h3>
+    </button>
+
+    <script type="module" src="src/Js/controllers/indexController.js"></script>
+</body>
+
+</html>
