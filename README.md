@@ -19,4 +19,4 @@ What you can do in this website?
 - If you are logged in, your shopping cart is stored in the API and you do not lose your shopping cart information;
 - If you are logged in you can add and edit new products for the e-commerce through the dashboard page;
  
- # Enjoy the [Website!](https://saamu192.github.io/E-commerce-whit-API/)
+ # Enjoy the [E-commerce!](https://saamu192.github.io/E-commerce-whit-API/)
