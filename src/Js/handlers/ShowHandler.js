@@ -53,7 +53,7 @@ export class ShowHandler {
         container.classList.add('container', 'container--header');
         leftSide.classList.add('leftSide');
         leftSide__title.classList.add('leftSide__title');
-        leftSide__title.innerHTML = '<img src="../../src/assets/images/Golden.png" width="50px", heigth="50px">Apollo Tech <small>Food</small';
+        leftSide__title.innerHTML = '<img src="../../../src/assets/images/Golden.png" width="50px", heigth="50px">Apollo Tech <small>Food</small';
         rightSide.classList.add('rightSide');
         rightSide__search.classList.add('rightSide__search');
         rightSide__icon.classList.add('rightSide__icon');
